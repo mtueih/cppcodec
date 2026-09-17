@@ -72,7 +72,7 @@ set_target_properties(cppcodec PROPERTIES LINKER_LANGUAGE CXX)
 target_include_directories(
     cppcodec
     INTERFACE
-        $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
         $<INSTALL_INTERFACE:include>
 )
 
